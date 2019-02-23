@@ -3,7 +3,7 @@ arr = [5, 3, 25, 12, -3, 0, 1, 33, -4, 22, 100, -100]
 def bubble_sort(arr):
     # coun tracker to break out
     count = 0
-    while count < len(arr):
+    while count < len(arr)-1:
         for i in range(len(arr)-1):
             # if current item greater than next item swap
             if arr[i] > arr[i+1]:
@@ -14,8 +14,6 @@ def bubble_sort(arr):
                     arr[j], arr[j-1] = arr[j-1], arr[j]
             count += 1
         # The array should be sorted after the count equals the array length - 1
-        if count == len(arr)-1:
-                break
     return arr
 
 print(bubble_sort(arr))
