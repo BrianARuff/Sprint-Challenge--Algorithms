@@ -6,6 +6,7 @@ Give an analysis of the running time of each snippet of
 pseudocode with respect to the input size n of each of the following:
 
 ```
+O(1) solution since the n's cancel each other out
 a)  a = 0
     while (a < n * n * n):
       a = a + n * n
@@ -24,6 +25,7 @@ b)  sum = 0
             l += 1
             sum += 1
 ```
+O(n) since nothing exceeds O(n) operation time
 
 ```
 c)  def bunnieEars(bunnies):
@@ -32,6 +34,7 @@ c)  def bunnieEars(bunnies):
 
       return 2 + bunnyEars(bunnies-1)
 ```
+O(n)
 
 ## Exercise II
 
